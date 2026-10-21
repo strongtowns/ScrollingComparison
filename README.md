@@ -1,19 +1,17 @@
 # ScrollingComparison
-Python Script to Generate a Scrolling Video showing a Before and After Comparison for use on Maps, Roads, etc. 
+Python script that turns a before and after pair of map or aerial images into a scrolling social media video. As the camera pans down the image, the after image paints over the before, which suits road corridors, highway projects and any change that runs along a long strip.
 
-The idea was inpired by [this excellent video](https://www.reddit.com/r/Sacramento/comments/1d31ziz/a_reminder_of_what_freeways_and_urban_renewal/) by **Troy Sankey** from **Strong Sactown** who produced a guide on how they made it [here](https://www.strongsactown.org/2024/06/02/how-to-make-freeway-before-after-animations/).
+The format comes from the before and after freeway videos that circulate widely in Strong Towns groups, showing how urban highways and urban renewal erased inner city neighbourhoods. A well-known example is [this video](https://www.reddit.com/r/Sacramento/comments/1d31ziz/a_reminder_of_what_freeways_and_urban_renewal/) by **Troy Sankey** of **Strong Sactown**, who wrote [a guide to making them](https://www.strongsactown.org/2024/06/02/how-to-make-freeway-before-after-animations/). That work in turn draws on [Segregation By Design](https://www.segregationbydesign.com/).
 
-This in turn was inspired by [Segregation By Design](https://www.segregationbydesign.com/).
-
-The script this video produces is a lot less flashy, but useful for a simple before and after comparison.
+This script produces a simpler version of the same effect with one Python file and two images, and no video editing software.
 
 # Output Preview
-![scrolling_video](https://github.com/StrongTownsLangley/ScrollingComparison/assets/160652425/2d55c810-282d-449c-adb8-e49fb9c2c0f1)
+![scrolling_video](https://github.com/strongtowns/ScrollingComparison/assets/160652425/2d55c810-282d-449c-adb8-e49fb9c2c0f1)
 
 Instagram post: https://www.instagram.com/p/C77oHi0yvYP/
 
-# About
-The Township of Langley released a large JPEG file that showed the entire length of road to be improved. The original image is available [here](https://www.tol.ca/en/connect/resources/get-involved/engage-tol/2024/216-Complete-Streets-Project/216-Corridor-Map_r5_Full-Corridor.jpg) and the website about the project is [here](https://www.tol.ca/en/connect/216-street-complete-street-project.aspx).
+# Example: 216 Street, Township of Langley
+The preview above was made for the 216 Street complete streets project. The Township of Langley released a large JPEG file that showed the entire length of road to be improved. The original image is available [here](https://www.tol.ca/en/connect/resources/get-involved/engage-tol/2024/216-Complete-Streets-Project/216-Corridor-Map_r5_Full-Corridor.jpg) and the website about the project is [here](https://www.tol.ca/en/connect/216-street-complete-street-project.aspx).
 
 Rotating the image 90 degrees and resizing it to 1080 pixels wide, it was possible to create a large image that can be panned vertically for a social media video. This was done to create *corridor_vert_1080_after.png*.
 
@@ -32,4 +30,4 @@ A seperate fade loop is done to wipe the rest of the after image over the before
 
 # Creating the Script
 
-The script was created using ChatGPT's 4o model as of 2024-06-06. *[chatgpt_log.html](https://htmlpreview.github.io/?https://github.com/StrongTownsLangley/ScrollingComparison/blob/main/chatgpt_log.html)* is the record of the conversation.
+The script was created using ChatGPT's 4o model as of 2024-06-06. *[chatgpt_log.html](https://htmlpreview.github.io/?https://github.com/strongtowns/ScrollingComparison/blob/main/chatgpt_log.html)* is the record of the conversation.
